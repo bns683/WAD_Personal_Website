@@ -1,3 +1,3 @@
-# WAD_Personal_Website
+# WAD_perosnal_website
 
-This reporsitory is for the WAD 1st assignment Personal Website
+This is a demo for WAD 1st assignment.
