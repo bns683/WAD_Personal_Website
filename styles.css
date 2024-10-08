@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    color: #007BFF;
+    color: #eed440;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -29,6 +29,23 @@ li {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+main {
+    flex: 1;
+    padding-top: 10%; /* Match the height of the header */
+    padding-bottom: 10%; /* Match the height of the footer */
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%; /* Adjust height as needed */
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%; /* Adjust height as needed */
+}
 header, footer {
     background-color: #ff0000;
     color: white;
@@ -48,3 +65,36 @@ header p, header a, footer p, footer a {
 header a:hover, footer a:hover {
     text-decoration: underline;
 }
+/* Add this to your existing styles.css file */
+
+/* Animation for header links */
+.animated-link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.animated-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.animated-link:hover {
+    color: #007BFF;
+}
+
+.animated-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
