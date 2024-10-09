@@ -1,5 +1,5 @@
 body {
-    background-color: #42a1c6;
+    background-color: #42a1c6; 
   }
   
   /* Franklin's Container */
@@ -56,7 +56,7 @@ body {
     transform: rotate(-40deg);
   }
   .fin, .fin-bottom, .fish-body {
-    transition: background-color 2s ease; /* Add transition for smooth color change */
+    transition: background-color 0.7s ease; /* Add transition for smooth color change */
 }
   
   /* Bubbles */
