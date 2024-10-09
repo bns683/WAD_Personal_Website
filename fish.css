@@ -6,7 +6,7 @@ body {
   .fish {
     width: 150px;
     height: 100px;
-    animation: swim 3s infinite; 
+    animation: swim 10s infinite; 
   }
   
   /* Franklin */
@@ -55,6 +55,9 @@ body {
     margin-top: -10px;
     transform: rotate(-40deg);
   }
+  .fin, .fin-bottom, .fish-body {
+    transition: background-color 2s ease; /* Add transition for smooth color change */
+}
   
   /* Bubbles */
   .bubbles {
