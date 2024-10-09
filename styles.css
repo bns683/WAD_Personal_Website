@@ -64,37 +64,13 @@ header p, header a, footer p, footer a {
 
 header a:hover, footer a:hover {
     text-decoration: underline;
-}
-/* Add this to your existing styles.css file */
+} 
 
-/* Animation for header links */
-.animated-link {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    color: #000;
-    transition: color 0.3s ease;
+/* Ensure the underline color is white */
+header p, footer p {
+    color: white;
+} 
+/* Ensure the underline color is white */
+header p, footer p {
+    color: white;
 }
-
-.animated-link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
-}
-
-.animated-link:hover {
-    color: #007BFF;
-}
-
-.animated-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
